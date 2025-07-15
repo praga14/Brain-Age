@@ -65,7 +65,7 @@ if "page" not in st.session_state:
 # Page 1: Upload & Input 
 if st.session_state.page == "main":
     st.title("🧠 Brain Age Prediction Portal")
-    st.write("Upload a T1-weighted MRI (.nii) and input actual age to predict brain age using CNN and ResNet.")
+    st.write("Upload a T1-weighted MRI and input actual age to predict brain age using CNN and ResNet.")
 
     uploaded_file = st.file_uploader("Upload .nii file", type=["nii"])
     given_age = st.number_input("Enter actual age", min_value=0, max_value=120, value=30)
